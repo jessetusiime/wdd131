@@ -1,0 +1,141 @@
+:root {
+    --primary: #3579bc;                 /* Blue - header/footer */
+    --secondary: #f8f9fa;               /* Light background */
+    --card-bg: #ffffff;                 /* Card background */
+    --text: #222222;                    /* Main text */
+    --accent: #1b2734;                  /* Nav accent */
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.8rem;
+    margin: 0;
+    padding: 0;
+    background: var(--secondary);
+    color: var(--text);
+}
+
+header {
+    color: #fff;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    background: var(--primary);
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    background: #333;
+    padding: 1rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color: #1874d1;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    background: var(--primary);
+    color: white;
+    padding: 0.5rem;
+    margin: -1rem -1rem 1rem -1rem;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+.about-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.6rem;
+    margin-top: 0.9rem;
+}
+
+.flag-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.flag-section img {
+    width: 200px;
+    height: auto;
+}
+
+.flag-desc {
+    padding-left: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    color: var(--primary);
+    line-height: 3rem;
+}
+
+ul li a {
+    color: inherit;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: var(--text);
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    background: var(--primary);
+    color: white;
+    padding: 0.4rem;
+    margin-top: 2rem;
+}
+
+#lastmodified {
+    color: #1bdf09;
+    font-size: 1rem;
+    font-weight: bolder;
+}
