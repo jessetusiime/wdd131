@@ -1,0 +1,56 @@
+@media (min-width: 720px) {
+    :root {
+        --gap: 1.25rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .primary-nav {
+        display: block;
+    }
+
+    .primary-nav ul {
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .primary-nav a {
+        padding: 0.5rem 0.9rem;
+        border-radius: 6px;
+        color: #fff;
+    }
+
+    .primary-nav a:hover,
+    .primary-nav a:focus {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .header-inner {
+        padding: 1rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .album {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: var(--gap);
+    }
+
+    .container h1 {
+        font-size: 2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .album figure {
+        padding: 0.75rem;
+    }
+
+    .album img {
+        max-height: 220px;
+    }
+}
