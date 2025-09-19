@@ -1,0 +1,45 @@
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #FFD700;
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    body {
+    background-color: lightblue !important;
+} */
+
+body {
+    background-color: lightblue !important;
+}
+
+h1,
+h2 {
+    color: var(--primary-color);
+}
+
+.hero {
+    text-align: center;
+}
+
+.weather .weather-icon::after {
+    content: "⛅";
+    margin-left: 5px;
+}
+
+@media (min-width: 768px) {
+    .hero img {
+        width: 100%;
+    }
+
+    .weather {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}

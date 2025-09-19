@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bali, Indonesia</title>
+    <link rel="stylesheet" href="week03/styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="week03/scripts/place.js" defer></script>
+    <meta name="description" content="Bali is a place I wish to visit">
+    <meta name="author" content="Tusiime Jesse">
+</head>
+<body>
+    <header>
+        <h1>Bali - Indonesia</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/beach.webp" media="(min-width: 768px)">
+                <img src="images/crater.webp" alt="Overhead view">
+            </picture>
+        </section>
+
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 5,780 sq km</li>
+                <li><strong>Population:</strong> 4,317,000</li>
+                <li><strong>Capital:</strong> Denpasar</li>
+                <li><strong>Languages:</strong> Balinese, Indonesian</li>
+                <li><strong>Currency:</strong> Indonesian Rupiah</li>
+                <li><strong>Time Zone:</strong> UTC+8</li>
+                <li><strong>Calling Code:</strong> +62</li>
+                <li><strong>Internet TLD:</strong> .id</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/sunny.svg" alt="Weather icon" class="weather-icon">
+            <p><strong>Temperature:</strong> 28 °C</p>
+            <p><strong>Conditions:</strong> Sunny</p>
+            <p><strong>Wind:</strong> 10 km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> 🌴 Bali, Indonesia 🌴</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
