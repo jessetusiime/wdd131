@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Temple Pictures Album">
+    <meta name="author" content="Tusiime Jesse">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="week02/styles/filtered-temples.css">
+    <link rel="stylesheet" href="week02/styles/filtered-temples-large.css">
+    <script src="week02/scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1 class="logo">Temple Album</h1>
+            <button id="hamburger" class="hamburger" aria-controls="primary-nav" aria-expanded="false"
+                aria-label="Open navigation">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+            <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#old">Old</a></li>
+                    <li><a href="#new">New</a></li>
+                    <li><a href="#large">Large</a></li>
+                    <li><a href="#small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h2>The Best Temples in the world</h2>
+        <section id="temple-cards" class="album"></section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; <span id="currentyear"></span> 🔄 Tusiime Jesse 🔄 Uganda</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+</body>
+</html>
