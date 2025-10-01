@@ -1,0 +1,122 @@
+:root {
+    --primary-green: #228B22;
+    --secondary-yellow: #FFD100;
+    --accent-blue: #0AC3E0;
+    --black: #000000;
+    --white: #FFFFFF;
+    --footer-green: #1D7A1D; /* slightly darker green for footer */
+    --text-color: #333333;   /* dark gray for body text */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: var(--white);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    width: 70px;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+footer {
+    background-color: var(--footer-green);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-green);
+}
+
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-yellow);
+}
+
+button,
+.highlight {
+    background-color: var(--secondary-yellow);
+    color: var(--black);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent-blue);
+    color: var(--white);
+}
+
+.color-palette {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.color-box {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.color-box.green {
+    background-color: var(--primary-green);
+}
+
+.color-box.yellow {
+    background-color: var(--secondary-yellow);
+    color: var(--black);
+}
+
+.color-box.blue {
+    background-color: var(--accent-blue);
+}
+
+.color-box.black {
+    background-color: var(--black);
+}
+
+.color-box.white {
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid ;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    display: block;
+}
