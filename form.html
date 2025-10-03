@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Review Form</title>
+    <meta name="description" content=" Phone Review Form">
+    <meta name="author" content="Tusiime Jesse">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form_large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header class="form-header">
+        <h1>Phone Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="review-form">
+            <label for="phoneName">Phone Name</label>
+            <select id="phoneName" name="phoneName" required>
+                <option value="" disabled selected>Select a Phone ...</option>
+            </select>
+
+            <fieldset class="align">
+                <legend>Overall Rating</legend>
+                <div class="rating-group">
+                    <label>
+                        <input type="radio" name="rating" id="rate1" value="1" required>
+                        ☆
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" id="rate2" value="2">
+                        ☆☆
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" id="rate3" value="3">
+                        ☆☆☆
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" id="rate4" value="4">
+                        ☆☆☆☆
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" id="rate5" value="5">
+                        ☆☆☆☆☆
+                    </label>
+                </div>
+            </fieldset>
+
+            <label for="purchaseDate">Date of Purchase</label>
+            <input type="date" id="purchaseDate" name="purchaseDate" required>
+
+            <fieldset class="align">
+                <legend>Useful Features (Check all that apply)</legend>
+                <div class="feature-group">
+                    <label>
+                        <input type="checkbox" id="feature1" name="features" value="durability">
+                        Durability
+                    </label>
+                    <label>
+                        <input type="checkbox" id="feature2" name="features" value="design">
+                        Design
+                    </label>
+                    <label>
+                        <input type="checkbox" id="feature3" name="features" value="affordability">
+                        Affordability
+                    </label>
+                    <label>
+                        <input type="checkbox" id="feature4" name="features" value="performance">
+                        Performance
+                    </label>
+                </div>
+            </fieldset>
+
+            <label for="reviewText">Written Review (optional)</label>
+            <textarea id="reviewText" name="reviewText" rows="4"></textarea>
+
+            <label for="userName">Your Name (optional)</label>
+            <input type="text" id="userName" name="userName">
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; <span id="currentyear"></span> 🔄 Tusiime Jesse 🔄 Uganda</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+</body>
+</html>
